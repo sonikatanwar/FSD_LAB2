@@ -1,0 +1,170 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* External CSS */
+
+body {
+    background: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Remove bullet point from nav-item */
+.navbar-nav .nav-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix position to the left */
+.navbar-brand {
+    margin-left: 0; /* Remove margin */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem; /* Match font size with Buy Now */
+    display: inline-block; /* Ensure Creamy and Buy Now are side by side */
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem; /* Match font size with Creamy */
+    display: inline-block; /* Ensure Creamy and Buy Now are side by side */
+    padding: 0.5rem 1rem; /* Add padding to the navigation links */
+}
+
+/* Maintain the same background color */
+.navbar {
+    background-color: transparent; /* Change to your desired background color */
+    position: fixed; /* Fix the navigation bar */
+    width: 100%; /* Make it full-width */
+    top: 0; /* Stick to the top */
+    padding: 10px 20px; /* Add padding for the navigation bar */
+}
+
+/* Add class .scrolled for purple background on scroll (same as index.html) */
+.navbar.scrolled {
+    background-color: rgb(222, 192, 222);
+    transition: background 500ms;
+}
+
+/* Remove the underscore from .navbar-toggler */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #EA1C2C;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #EA1C2C;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="number"], input[type="radio"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Beautify Order Now button */
+input[type="submit"] {
+    background-color: #EA1C2C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Adjust positions of "CREAMY" and "BUY NOW" */
+.navbar-expand-md .navbar-collapse {
+    display: inline-block; /* Ensure Creamy and Buy Now are side by side */
+}
+
+/* Hover effect for navigation links */
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C;
+}
+
+/* Media query for responsive adjustments */
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Adjust the radio buttons alignment and spacing */
+input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Make sure labels appear inline */
+label[for="delivery-yes"],
+label[for="delivery-no"] {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Additional styling for labels */
+label {
+    font-size: 1.2rem;
+    display: inline; /* Add this to make labels inline with radio buttons */
+    margin-right: 5px; /* Adjust spacing as needed */
+}

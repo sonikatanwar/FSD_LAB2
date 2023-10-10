@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ice Cream Shop - Buy Now</title>
+</head>
+<body>
+
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0">
+        <a href="index.html" class="navbar-brand">CREAMY</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ml-auto"> <!-- Use ml-auto to align "BUY NOW" to the right -->
+                <li class="nav-item">
+                    <a href="buy-now.html" class="nav-link">BUY NOW</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="container">
+        <h1>Our Delicious Ice Cream Flavors</h1>
+        <table>
+            <caption>PRICES</caption>
+            <thead>
+                <tr>
+                    <th>Flavor</th>
+                    <th>Cup (8oz)</th>
+                    <th>Cone (Regular)</th>
+                    <th>Family Pack (32oz)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>$3.50</td>
+                    <td>$4.00</td>
+                    <td>$12.00</td>
+                </tr>
+                <tr>
+                    <td>Vanilla</td>
+                    <td>$3.50</td>
+                    <td>$4.00</td>
+                    <td>$12.00</td>
+                </tr>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>$3.50</td>
+                    <td>$4.00</td>
+                    <td>$12.00</td>
+                </tr>
+                <!-- Add more flavors and prices as needed -->
+            </tbody>
+        </table>
+
+        <h2>Find Your Favorite Flavor!</h2>
+        <p>Explore our wide range of flavors and treat yourself to a delightful ice cream experience. Whether you prefer classic chocolate or adventurous fruit flavors, we have something for everyone.</p>
+
+        <h2>Order Online</h2>
+        <p>Use the form below to place your order. Select your favorite flavor, quantity, and delivery preferences. We'll deliver your ice cream right to your doorstep!</p>
+
+        <form>
+            <label for="flavor">Select Flavor:</label>
+            <select id="flavor" name="flavor">
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="strawberry">Strawberry</option>
+                <!-- Add more flavor options here -->
+            </select>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <br>
+            <label for="delivery">Delivery:</label>
+            <input type="radio" id="delivery-yes" name="delivery" value="yes">
+            <label for="delivery-yes">Yes</label>
+            <input type="radio" id="delivery-no" name="delivery" value="no" checked>
+            <label for="delivery-no">No</label>
+            <br>
+            <input type="submit" value="Order Now">
+        </form>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+</html>
